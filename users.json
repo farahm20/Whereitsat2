@@ -1,0 +1,22 @@
+{
+  "users": [
+    {
+      "uuid": "15c902d4-d882-4b38-a876-6c7e4f1ea0ef",
+      "username": "staff",
+      "password": "$2b$10$ooRF6ESQDsmVhPnhRJ0I6.gMiReX1VYxVkoMTkBT/pVfGwHU7c1wC",
+      "role": "staff"
+    },
+    {
+      "uuid": "0032efcb-7136-48db-b437-03c80416eab3",
+      "username": "farah",
+      "password": "$2b$10$jtzKX5Iva/GxP8Jizt0TGe/q1i7ieIa9TqX7FKRB5TmVQ2rVYptxm",
+      "role": "admin"
+    },
+    {
+      "uuid": "3ca0e291-d64b-4717-8284-6dd5c85e9563",
+      "username": "admin",
+      "password": "$2b$10$o14mz.xji3TRje6VPXdIg.nu/EjReP3L26hStiSR.0nUKnk7PBjmm",
+      "role": "admin"
+    }
+  ]
+}

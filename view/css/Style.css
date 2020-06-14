@@ -1,0 +1,930 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background: #231F42;
+    /* #E5E5E5;*/
+}
+
+.yellowWrapper {
+    
+    position: relative;
+    
+    background: #F39440;
+    width: 394px;
+    height: 950px;
+    font-size: 20px;
+    text-align: center;
+    top: 20%;
+    left: 30%;
+    right: 30%;
+}
+
+.wrapper {
+    background-color: #231F42;
+    width: 394px;
+    height: max-content;
+    position: relative;
+    font-size: 20px;
+    text-align: center;
+    top: 20%;
+    left: 30%;
+    right: 30%;
+}
+
+.events {
+    top: 50px;
+    position: relative;
+}
+.mainHeading {
+    position: relative;
+    width: 311px;
+    height: 45px;
+    left: 32px;
+    top: 34px;
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    font-family: Sansita One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 41px;
+    line-height: 50px;
+    color: #F56B9A;
+    /* font-style: italic; */
+}
+
+.eventText {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-evenly; */
+    position: relative;
+    width: 210px;
+    height: 192px;
+    left: 45px;
+    top: 24px;
+    font-family: Fira Sans;
+    font-style: normal;
+    /* font-weight: 600; */
+    font-size: 15px;
+    line-height: 14px;
+    /* display: flex; */
+    align-items: end;
+    color: #FFFFFF;
+    /* text-shadow: 1px 1px 0px #F56B9A; */
+
+}
+
+.eventDate {
+    position: relative;
+    width: 66px;
+    height: 66px;
+    left: 32px;
+    top: 21px;
+    border: 1px solid #FFFFFF;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-size: 18px;
+}
+
+.eventPrice {
+    position: relative;
+    width: 109px;
+    height: 27px;
+    /* left: 232px; */
+    top: 73px;
+    font-family: Fira Sans;
+    font-style: normal;
+    /* font-weight: bold; */
+    /* font-size: 17px; */
+    /* line-height: 20px; */
+    display: flex;
+    align-items: flex-end;
+    text-align: right;
+    color: #37AEAB;
+}
+    
+.eventCard {
+    display: flex;
+    flex-direction: row;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    /* font-size: 14px; */
+    /* line-height: 17px; */
+    color: #D0D0D0;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.eventTime {
+    position: absolute;
+    width: 140px;
+    height: 27px;
+    left: 6px;
+    top: 60px;
+    display: flex;
+    flex-direction: row;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    color: #D0D0D0;
+}
+
+.eventPlace {
+    position: relative;
+    left: 6px;
+}
+
+.paragraph {
+    position: absolute;
+width: 202px;
+height: 27px;
+left: 87px;
+top: 99px;
+
+font-family: Fira Sans;
+font-style: italic;
+font-weight: normal;
+font-size: 19px;
+line-height: 23px;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.8);
+}
+
+.orderName {
+
+position: absolute;
+width: 281px;
+height: 43px;
+left: 83px;
+top: 189px;
+
+font-family: Sansita One;
+font-style: normal;
+font-weight: normal;
+font-size: 35px;
+line-height: 41px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #F56B9A;
+
+}
+
+.orderDate {
+    width: 284px;
+    height: 25px;
+    left: 100px;
+    top: 237px;
+}
+
+.orderTime {
+    width: 284px;
+    height: 25px;
+    left: 175px;
+    top: 255px;
+}
+
+.orderDate, .orderTime {
+  position: absolute;
+font-family: Fira Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 19px;
+line-height: 23px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #37AEAB;
+
+}
+
+.orderPlace {
+
+position: absolute;
+width: 272px;
+height: 37px;
+left: 119px;
+top: 257px;
+
+font-family: Fira Sans;
+font-style: italic;
+font-weight: normal;
+font-size: 16px;
+line-height: 19px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: rgba(255, 255, 255, 0.7);
+}
+
+.orderPrice {
+    position: absolute;
+width: 145px;
+height: 50px;
+left: 115px;
+top: 390px;
+
+font-family: Fira Sans;
+font-style: normal;
+font-weight: bold;
+font-size: 32px;
+line-height: 38px;
+display: flex;
+align-items: center;
+text-align: center;
+
+color: #FFFFFF;
+
+text-shadow: 1px 1px 0px #F56B9A;
+}
+
+.buyButton {
+    position: absolute;
+width: 310px;
+height: 60px;
+left: 33px;
+top: 573px;
+
+background: #37AEAB;
+border-radius: 3px;
+}
+
+.ticket {
+    position: absolute;
+    width: 311px;
+    height: 450px;
+    left: 32px;
+    top: 109px;
+
+    background: #FFFFFF;
+    box-shadow: 0px 0px 32px rgba(0, 0, 0, 0.34);
+    border-radius: 3px;
+}
+
+.ticketName {
+    position: absolute;
+    width: 281px;
+    height: 0px;
+    left: 20px;
+    top: 28px;
+    font-family: Sansita One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 26px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    color: #F56B9A;
+
+    /* position: absolute; */
+    /* width: 311px; */
+ /*   height: 0px;
+    left: 32px;
+    top: 199px;
+    border: 1px dashed rgba(0, 0, 0, 0.4);*/
+}
+
+.ticketPlace {
+    position: absolute;
+    width: 281px;
+    height: 30px;
+    left: 20px;
+    top: 20px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.7);
+}
+
+.dateSection {
+    position: absolute;
+    width: 311px;
+    height: 66px;
+    left: 1px;
+    top: 218px;
+    background: rgba(0, 0, 0, 0.06);
+}
+
+.ticketDate {
+    position: absolute;
+    width: 84px;
+    height: 23px;
+    left: 5px;
+    top: 20px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.ticketTime {
+    position: absolute;
+    width: 120px;
+    height: 28px;
+    left: 119px;
+    top: 19px;
+
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.nameTitle{
+    position: absolute;
+    width: 280px;
+    height: 30px;
+    left: 18px;
+    top: -5px;
+
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.placeSection {
+    position: absolute;
+    width: 311px;
+    height: 0px;
+    left: 0px;
+    top: 99px;
+    border: 1px dashed rgba(0, 0, 0, 0.4);
+}
+
+.placeTitle {
+    position: absolute;
+    width: 281px;
+    height: 30px;
+    left: 18px;
+    top: -4px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.dateTitle {
+    position: absolute;
+    width: 56px;
+    height: 29px;
+    left: 18px;
+    top: -8px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.timeTitle {
+    position: absolute;
+    width: 56px;
+    height: 0px;
+    left: 131px;
+    top: 5px;
+
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.timeSection {
+    position: absolute;
+    width: 309px;
+    height: 0px;
+    left: -2px;
+    top: 218px;
+    border: 1px dashed rgba(0, 0, 0, 0.4);
+}
+
+.barCodeSection {
+
+    position: absolute;
+    width: 311px;
+    height: 0px;
+    left: 0px;
+    top: 281px;
+    border: 1px dashed rgba(0, 0, 0, 0.4);
+}
+
+.barCodeImage {
+    position: absolute;
+    width: 171px;
+    height: 61px;
+    left: 61px;
+    top: 29px;
+    font-family: Libre Barcode 128;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 101px;
+    line-height: 101px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.8);
+}
+/*
+.ticketDate {
+
+position: absolute;
+width: 60px;
+height: 0px;
+left: 133px;
+top: 379px;
+
+border: 1px dashed rgba(0, 0, 0, 0.4);
+transform: rotate(-90deg);
+}*/
+
+.ticketNumber {
+
+    position: absolute;
+    width: 311px;
+    height: 28px;
+    left: 50px;
+    top: 83px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 12px;
+    line-height: 14px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.3em;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.timeFromTitle {
+    position: absolute;
+    width: 56px;
+    height: 29px;
+    left: 128px;
+    top: -8px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.timeTillTitle {
+    position: absolute;
+    width: 56px;
+    height: 29px;
+    left: 228px;
+    top: -8px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 10px;
+    line-height: 12px;
+    display: flex;
+    align-items: center;
+    color: rgba(0, 0, 0, 0.4);
+}
+
+.ticketFromTime {
+    position: absolute;
+    width: 84px;
+    height: 23px;
+    left: 107px;
+    top: 20px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.ticketTillTime {
+    position: absolute;
+    width: 84px;
+    height: 23px;
+    left: 207px;
+    top: 20px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.loginPageButton, .logout {
+       /* right: 44px; */
+       position: relative;
+       left: 154px;
+       top: 4px;
+       
+       font-family: Fira Mono;
+       font-style: normal;
+       font-weight: bold;
+       font-size: 18px;
+       line-height: 26px;
+
+       background-color: #272250;
+       color: white;
+       border: white;
+       width: 75px;
+       padding: 1px 0px;
+       text-align: center;
+       text-decoration: none;
+       display: inline-block;
+       font-size: 15px;
+       letter-spacing: 0.3em;
+       margin: 1px 0;
+       transition-duration: 0.4s;
+       cursor: pointer;
+}
+
+.eventNameButton {
+    border: none;
+    background-color: #231F42;
+    color: #FFFFFF;
+    /* font-size: 25px; */
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.logo {
+    position: absolute;
+    width: 200px;
+    height: 69px;
+    left: 100px;
+    top: 53px;
+}
+
+.yellowh1 {
+    position: absolute;
+    width: 200px;
+    height: 52px;
+    left: 28px;
+    top: 195px;
+    font-family: Sansita One;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 27px;
+    line-height: 23px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+
+    color: #000000;
+}
+
+.yellowh2 {
+    position: absolute;
+width: 200px;
+height: 35px;
+left: 111px;
+top: 308px;
+
+font-family: Fira Sans;
+font-style: normal;
+font-weight: normal;
+font-size: 23px;
+line-height: 26px;
+/*display: flex;*/
+align-items: center;
+text-align: center;
+letter-spacing: 0.3em;
+
+color: rgba(0, 0, 0, 0.8);
+}
+
+.choice button {
+    position: absolute;
+width: 310px;
+height: 63px;
+left: 41px;
+
+border: 2px solid #231F42;
+box-sizing: border-box;
+border-radius: 3px;
+}
+
+.verifyButton {
+    top: 500px;
+}
+
+.staffButton {
+    top: 400px;
+}
+
+button a {
+        /* position: absolute; */
+    /* width: 202px; */
+    /* height: 30px; */
+    /* left: 86px; */
+    /* top: 342px; */
+    font-family: Fira Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    /* display: flex; */
+    /* align-items: center; */
+    /* text-align: center; */
+    letter-spacing: 0.3em;
+    color: black;
+    text-decoration: none;
+}
+
+.form-input {
+    display: flex;
+    justify-content: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 30px;
+    
+  }
+
+  #username, #password, #ticketNumber{
+    position: relative;
+    top: 400px;
+    left: 40px;
+    /* padding: 0; */
+    /* margin: 0; */
+    border: 2px solid #231F42;
+    background-color: #F39440;
+    width: 310px;
+    height: 60px;
+    text-align: center;
+    margin-bottom: 30px;
+    font-family: Fira Mono;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.3em; 
+  }
+  
+  #loginButton, #verifyButton{
+    position: relative;
+    top: 437px;
+    left: 11px;
+    padding: 0;
+    margin: 0;
+    border: 2px solid #231F42;
+    background-color: #231F42;
+    color: #ffffff;
+    width: 310px;
+    height: 60px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+    /* text-align: center; */
+  }
+
+  .logout{
+    left: 670px;
+    width: 100px;
+    color: white;
+
+  }
+
+  .logoutButton {
+    position: relative;
+    top: 500px;
+    left: 11px;
+     padding: 0;
+    margin: 0;
+    border: 2px solid #231F42;
+    background-color: #231F42;
+    color: #ffffff;
+    width: 310px;
+    height: 60px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 26px;
+  }
+
+  .hide{
+    display: none;
+  }
+
+  .admin-wrapper {
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+
+    background: #231F42;
+  }
+
+  .admin-leftBox {
+    position: absolute;
+    width: 732px;
+    height: 313px;
+    left: 130px;
+    top: 202px;
+    
+    background: rgba(0, 0, 0, 0.3);
+    border: 1px solid #000000;
+    box-sizing: border-box;
+  }
+
+  .admin-logo {
+    position: absolute;
+    width: 200px;
+    height: 69px;
+    left: 45px;
+    top: 45px;
+  }
+
+  .admin-rightBox {
+    position: absolute;
+    width: 432px;
+    height: 378px;
+    left: 878px;
+    top: 202px;
+    
+    background: rgba(0, 0, 0, 0.3);
+  }
+
+  .adminh1 {
+    position: relative;
+    width: 140px;
+    height: 0px;
+    left: 18px;
+    top: 0;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: 31px;
+    display: flex;
+    align-items: center;
+    color: #F56B9A;
+  }
+
+.createEventButton {
+  position: relative;
+  width: 260px;
+  height: 30px;
+  left: 0px;
+  top: 342px;
+  background: #F56B9A;
+  border-radius: 3px;
+}
+
+.adminEventForm{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    width: 674px;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.adminEventCard {
+    display: grid;
+    grid-template-columns: 24% 30% 30% 20%;
+    grid-template-rows: auto;
+  
+    grid-template-rows: 37px;
+
+}
+.allAdminEvents {
+    position: relative;
+    top: 31px;
+}
+
+.adminEventName{
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.adminEventPlace, .adminEventPlace, .eventTotalTickets, .eventTicketSold {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #FFFFFF;
+}
+
+.adminEventForm h1 {
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: #F56B9A;
+}
+
+.inputForm {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 350px;
+}
+
+input {
+    background-color: #19162e;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    box-sizing: border-box;
+    width: 400px;
+    height: 40px;
+    margin-bottom: 15px;
+    font-family: Fira Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    color: rgba(255, 255, 255, 0.6);
+    padding-left: 18px;
+    margin-left: 16px;
+}
+
+.submit {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;  
+}
+
+.p-submit {
+    width: 190px;
+    height: 40px;
+    margin: 0px;
+    margin-bottom: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+  }
+
+.fromTime, .tillTime, .totalTickets, .price, .addEventButton {
+    width: 190px;
+    height: 40px;
+    margin: 0px;
+    padding: 0px;
+    padding-left: 20px;
+}
+
+.addEventButton {
+    background-color: #F56B9A;
+    margin-top: -10px;
+    margin-left: 17px;
+}

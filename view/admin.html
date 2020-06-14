@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="CSS/Style.css" type="text/css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Fira+Mono|Sansita+One|Fira+Sans&display=swap">
+    <title> Where its @ </title>
+</head>
+
+<body>
+    <div class="admin-wrapper">
+        <button class = "loginPageButton"><a href="loginPage.html">LOGIN</a></button>
+        <button class = "logout" id="logoutButton">LOG OUT</button>
+        
+        <section class="logo">
+            <img src="./images/logo-colour.png" alt="logo">
+        </section>
+        <section class="admin-leftBox">
+            <div class="adminEventForm">
+                <h1 class="nameh1"> Name</h1>
+                <h1 class="whereh1"> Where</h1>
+                <h1 class="totalTicketsh1"> Total Tickets</h1>
+                <h1 class="soldTicketsh1"> Sold Tickets</h1>
+            </div>
+
+            <section class="adminEvents">
+                <div class="allAdminEvents"></div>
+            </section>
+
+
+        </section>
+        <section class="admin-rightBox">
+
+            <section class = "addEventForm">
+                <h1 class="adminh1"> Add Events</h1>
+                <article class="input-form">
+                    <input type = "text" id = "formName" name = "formName" placeholder = "Name" value = "">
+                    <input type = "text" id = "formPlace" name = "formPlace" placeholder = "Location" value="">
+                    <input type = "text" id = "formDate" name = "formDate" placeholder = "Date" value="">
+                      <section class="submit">
+                        <p class="p-submit"><input type = "text" class = "fromTime"  name = "fromTime" placeholder = "From time" value=""></p> 
+                        <p class="p-submit"><input type = "text" class = "tillTime" name = "tillTime"  placeholder = "To time" value=""></p> 
+                        <p class="p-submit"><input type = "text" class = "totalTickets" name = "totalTickets"  placeholder = "tickets" value=""></p> 
+                        <p class="p-submit"><input type = "text" class = "price" name = "price"  placeholder = "Price" value = ""></p> 
+                      </section>
+                    <p id = "addEventButton"> <input type = "submit" class = "addEventButton"  value="Add the event"></p> 
+                  </article>
+                </section>
+        </section>
+    </div>
+
+    <!--End of wrapper---->
+
+    <!--Javascript-->
+    <script src="script/admin.js" type="module"></script>
+
+</body>
+
+</html>
