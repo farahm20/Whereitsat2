@@ -11,6 +11,6 @@ export async function isLoggedin(token) {
 
     const data = await response.json();
     console.log("In verify.js: data recieved: ");
-    console.log(data.user);
+    console.log(data);
     return data;
 }

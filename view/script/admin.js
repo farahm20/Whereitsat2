@@ -8,14 +8,23 @@ function getToken() {
 
 checkUserType();
 async function checkUserType() {
+
     console.log("Check user function");
     const token = getToken();
     let checkUser = await isLoggedin(token);
-    console.log(checkUser.user.role);
+    console.log(token);
+    if (token) {
+        console.log("its not null");
+        console.log(checkUser.user.role);
 
-    if(checkUser.user.role !== "admin" || checkUser.user.role === "staff"){
-        location.href = 'http://localhost:8000/verify.html';
-    } 
+        if (checkUser.user.role === "staff") {
+            location.href = 'http://localhost:8000/loginPage.html';
+        }
+    }else {
+        console.log("LOGIN FIRST");
+        location.href = 'http://localhost:8000/loginPage.html';
+
+    }
 }
 //isLoggedin();
 /*async function isLoggedin() {

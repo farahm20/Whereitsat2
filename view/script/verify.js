@@ -23,36 +23,7 @@ async function checkUserType() {
         location.href = 'http://localhost:8000/admin.html'
     };*/
 }
-/*
-async function getAccountType(){
-    const url = 'http://localhost:8000/whereitsat/accountType/get';
-    const response = await fetch(url, {
-        method: 'GET',
-        headers: {
-            'Authorization': 'Bearer ' + getToken()
-        }
-    });
 
-    const data = await response.json();
-    
-    if(data.success){
-        if(data.role === "admin")
-        {
-            console.log("USER IS AN ADMIN");
-            location.href = 'http://localhost:8000/admin.html';
-        }
-        else if(data.role === "staff")
-        {
-            console.log("USER IS STAFF");
-            location.href = 'http://localhost:8000/staff.html';
-        }
-        else{
-            console.log("WRONG ID OR PASSWORD");
-            location.href = 'http://localhost:8000/loginPage.html';
-        }
-    }
-}
-*/
 async function isLoggedin() {
 
     const token = getToken();
@@ -69,10 +40,17 @@ async function isLoggedin() {
     console.log("In verify.js: data recieved: ");
     console.log(data);
 
-    if (!data.isLoggedin) {
-        if (data.user.role !== "staff") {
+    if (token) {
+        console.log("its not null");
+        console.log(data.user.role);
+
+        if (data.user.role === "admin") {
             location.href = 'http://localhost:8000/loginPage.html';
-        } 
+        }
+    }else {
+        console.log("LOGIN FIRST");
+        location.href = 'http://localhost:8000/loginPage.html';
+
     }
 }
 
